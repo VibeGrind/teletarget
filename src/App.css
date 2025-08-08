@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  color: #2b2d31;
+  line-height: 1.5;
+}
+
+.App {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Global Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: #2b2d31;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f3f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c8cd;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8b1ba;
+}
+
