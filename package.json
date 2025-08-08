@@ -2,7 +2,7 @@
   "name": "teletarget",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ВАШ-GITHUB-USERNAME.github.io/teletarget",
+  "homepage": "https://vibegrind.github.io/teletarget",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.4",
