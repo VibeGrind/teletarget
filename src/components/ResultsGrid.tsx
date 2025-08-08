@@ -13,7 +13,7 @@ const mockChannels = [
     participantsCount: 156432,
     onlineCount: 12845,
     username: '@tech_future_ru',
-    avatar: '/logos/channel-1.jpg'
+    avatar: `${process.env.PUBLIC_URL}/logos/channel-1.jpg`
   },
   {
     id: 1002,
@@ -25,7 +25,7 @@ const mockChannels = [
     participantsCount: 89234,
     onlineCount: 7432,
     username: '@crypto_blockchain',
-    avatar: '/logos/group-1.jpg'
+    avatar: `${process.env.PUBLIC_URL}/logos/group-1.jpg`
   },
   {
     id: 1003,
@@ -37,7 +37,7 @@ const mockChannels = [
     participantsCount: 234567,
     onlineCount: 18923,
     username: '@gaming_industry',
-    avatar: '/logos/channel-2.jpg'
+    avatar: `${process.env.PUBLIC_URL}/logos/channel-2.jpg`
   },
   {
     id: 1004,
@@ -49,7 +49,7 @@ const mockChannels = [
     participantsCount: 67891,
     onlineCount: 5642,
     username: '@python_programming',
-    avatar: '/logos/forum-1.jpg'
+    avatar: `${process.env.PUBLIC_URL}/logos/forum-1.jpg`
   },
   {
     id: 1005,
@@ -61,7 +61,7 @@ const mockChannels = [
     participantsCount: 123456,
     onlineCount: 9876,
     username: '@design_ux_ui',
-    avatar: '/logos/channel-3.jpg'
+    avatar: `${process.env.PUBLIC_URL}/logos/channel-3.jpg`
   },
   {
     id: 1006,
@@ -73,7 +73,7 @@ const mockChannels = [
     participantsCount: 198743,
     onlineCount: 15432,
     username: '@marketing_smm',
-    avatar: '/logos/group-2.jpg'
+    avatar: `${process.env.PUBLIC_URL}/logos/group-2.jpg`
   }
 ];
 
