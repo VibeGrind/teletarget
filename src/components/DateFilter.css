@@ -1,0 +1,251 @@
+.date-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.date-filter-dropdown {
+  position: relative;
+}
+
+.date-filter-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 44px;
+}
+
+.date-filter-trigger:hover {
+  border-color: #d1d5db;
+  background: #f9fafb;
+}
+
+.date-filter-trigger:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.date-filter-value {
+  color: #374151;
+  font-weight: 500;
+}
+
+.date-filter-arrow {
+  color: #6b7280;
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.date-filter-arrow.open {
+  transform: rotate(180deg);
+}
+
+.date-filter-popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 4px;
+  overflow: hidden;
+  animation: slideDown 0.15s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.date-filter-tabs {
+  display: flex;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.date-tab {
+  flex: 1;
+  padding: 12px 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.date-tab:hover {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.date-tab.active {
+  background: white;
+  color: #3b82f6;
+  border-bottom-color: #3b82f6;
+}
+
+.date-filter-content {
+  padding: 16px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.preset-options {
+  display: grid;
+  gap: 8px;
+}
+
+.preset-option {
+  padding: 12px 16px;
+  border: 2px solid #f1f5f9;
+  border-radius: 10px;
+  background: #fafbfc;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  transition: all 0.15s ease;
+  text-align: left;
+}
+
+.preset-option:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+  transform: translateY(-1px);
+}
+
+.preset-option.selected {
+  background: #dbeafe;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+}
+
+.single-date-picker {
+  display: flex;
+  justify-content: center;
+}
+
+.date-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  background: #fafbfc;
+  transition: all 0.2s ease;
+}
+
+.date-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.date-range-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.date-range-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.date-range-row label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  min-width: 35px;
+}
+
+.apply-range-btn {
+  padding: 10px 16px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.apply-range-btn:hover:not(:disabled) {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.apply-range-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.date-filter-actions {
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.date-action-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border: 2px solid;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.date-action-btn.clear {
+  background: white;
+  color: #6b7280;
+  border-color: #d1d5db;
+}
+
+.date-action-btn.clear:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+  color: #374151;
+}
+
+.date-action-btn.apply {
+  background: #10b981;
+  color: white;
+  border-color: #10b981;
+}
+
+.date-action-btn.apply:hover {
+  background: #059669;
+  border-color: #059669;
+  transform: translateY(-1px);
+}

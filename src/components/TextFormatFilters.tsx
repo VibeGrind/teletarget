@@ -18,7 +18,7 @@ const TextFormatFilters: React.FC<TextFormatFiltersProps> = ({
   return (
     <div className="filter-category text-format-filters">
       <div className="expandable-header" onClick={onExpandToggle}>
-        <h3 className="filter-category-title">Форматирование текста</h3>
+        <h3 className="filter-category-title">✨ Форматирование текста</h3>
         <div className="filter-status">
           <span className="filter-status-text">Не выбрано</span>
           <span className={`expand-icon ${expanded ? 'expanded' : ''}`}>▼</span>

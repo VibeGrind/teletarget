@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FilterSection.css';
+import SystemFilters from './SystemFilters';
 import TechnicalFilters from './TechnicalFilters';
 import UserFilters from './UserFilters';
 import TextFormatFilters from './TextFormatFilters';
@@ -10,6 +11,7 @@ interface FilterSectionProps {
 }
 
 const FilterSection: React.FC<FilterSectionProps> = ({ filters, onFiltersChange }) => {
+  const [systemExpanded, setSystemExpanded] = useState(false);
   const [technicalExpanded, setTechnicalExpanded] = useState(false);
   const [userExpanded, setUserExpanded] = useState(false);
   const [textFormatExpanded, setTextFormatExpanded] = useState(false);
@@ -17,6 +19,12 @@ const FilterSection: React.FC<FilterSectionProps> = ({ filters, onFiltersChange 
   return (
     <div className="filter-section">
       <div className="filter-content">
+        <SystemFilters 
+          filters={filters} 
+          onChange={onFiltersChange}
+          expanded={systemExpanded}
+          onExpandToggle={() => setSystemExpanded(!systemExpanded)}
+        />
         <TechnicalFilters 
           filters={filters} 
           onChange={onFiltersChange}

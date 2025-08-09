@@ -23,7 +23,7 @@ const UserFilters: React.FC<UserFiltersProps> = ({ filters, onChange, expanded, 
   return (
     <div className="filter-category user-filters">
       <div className="expandable-header" onClick={onExpandToggle}>
-        <h3 className="filter-category-title">Метаданные Telegram</h3>
+        <h3 className="filter-category-title">👥 Метаданные Telegram</h3>
         <div className="filter-status">
           <span className="filter-status-text">Не выбрано</span>
           <span className={`expand-icon ${expanded ? 'expanded' : ''}`}>▼</span>
