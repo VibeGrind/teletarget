@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/teletarget/static/css/main.8dec6a8b.css",
-    "main.js": "/teletarget/static/js/main.2ae1a0af.js",
+    "main.css": "/teletarget/static/css/main.6656fb9f.css",
+    "main.js": "/teletarget/static/js/main.6fa00bc0.js",
     "static/js/453.fe7d8c44.chunk.js": "/teletarget/static/js/453.fe7d8c44.chunk.js",
     "index.html": "/teletarget/index.html",
-    "main.8dec6a8b.css.map": "/teletarget/static/css/main.8dec6a8b.css.map",
-    "main.2ae1a0af.js.map": "/teletarget/static/js/main.2ae1a0af.js.map",
+    "main.6656fb9f.css.map": "/teletarget/static/css/main.6656fb9f.css.map",
+    "main.6fa00bc0.js.map": "/teletarget/static/js/main.6fa00bc0.js.map",
     "453.fe7d8c44.chunk.js.map": "/teletarget/static/js/453.fe7d8c44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dec6a8b.css",
-    "static/js/main.2ae1a0af.js"
+    "static/css/main.6656fb9f.css",
+    "static/js/main.6fa00bc0.js"
   ]
 }
