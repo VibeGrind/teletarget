@@ -11,7 +11,10 @@ const Header: React.FC<HeaderProps> = ({ searchQuery, onSearchChange }) => {
     <header className="header">
       <div className="header-content">
         <div className="logo">
-          <h1>TeleTarget</h1>
+          <h1>
+            <span className="logo-tg">TG</span>
+            <span className="logo-ate">ate</span>
+          </h1>
         </div>
         <div className="search-container">
           <input

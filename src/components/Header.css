@@ -19,9 +19,18 @@
 .logo h1 {
   font-size: 28px;
   font-weight: 300;
-  color: #2b2d31;
   margin: 0;
   letter-spacing: -0.5px;
+}
+
+.logo-tg {
+  color: #0088cc;
+  font-weight: 600;
+}
+
+.logo-ate {
+  color: #2b2d31;
+  font-weight: 300;
 }
 
 .search-container {
